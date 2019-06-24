@@ -197,6 +197,17 @@
   version = "1.0.1"
 
 [[projects]]
+  digest = "1:0af1dc04a5838f433503810d9f82b6f8fbc800515a37ac5040e056c7fff0ac86"
+  name = "github.com/nuvo/kube-tasks"
+  packages = [
+    "pkg/kubetasks",
+    "pkg/utils",
+  ]
+  pruneopts = "UT"
+  revision = "046c8c4cd4565ad0c1d3623a8a192da03ae7c12c"
+  version = "0.1.2"
+
+[[projects]]
   digest = "1:346329adc4312b9865e34343623136788661ef30e2940a81818a6ad10de97494"
   name = "github.com/nuvo/skbn"
   packages = [
@@ -531,6 +542,8 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "github.com/nuvo/kube-tasks/pkg/kubetasks",
+    "github.com/nuvo/kube-tasks/pkg/utils",
     "github.com/nuvo/skbn/pkg/skbn",
     "github.com/spf13/cobra",
     "k8s.io/apimachinery/pkg/apis/meta/v1",
